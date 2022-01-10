@@ -29,10 +29,6 @@ def Shuffle():
     if not Filename:
         StatusLabel.configure(text="No file selected")
         return
-
-    if Filename.split(".")[1] != "osu":
-        StatusLabel.configure(text="selected file is not .osu file")
-        return
     
     DiffName = DiffNameEntry.get()
     if not DiffName:
